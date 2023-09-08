@@ -8,11 +8,17 @@ body{
     text-align: center
 }
 
+.hemsida{
+    color: rgb(0, 0, 0);
+    text-align: center
+}
+
 h1{
     color: rgb(0, 0, 0);
     text-align: center;
-    font-size: 22px;
+    font-size: 75px;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
 }
 
 h2{
@@ -22,7 +28,7 @@ h2{
 
 h3{
     color: rgb(0, 0, 0);
-    text-align: right
+    text-align: center;
 }
 
 .altP{
@@ -30,21 +36,74 @@ h3{
 }
 
 .treP{
-    text-align: right;
+    text-align: center;
 }
 
 .delP{
-    text-align: right;
+    text-align: center;
 }
 
 a{
     color: rgb(55, 0, 255);
-    text-decoration: none;  
+    text-decoration: none;
 }
 .border{
     text-align: center;
     border:3px solid black;
     padding: 5px;
     width: 285px;
-    margin: 0 auto
+    margin: 0px auto
+}
+
+.wrapper{
+    background-color: bisque;
+    width:90%;
+    margin:0 auto;
+    display: grid;
+    grid-template-rows: 120px 75px auto 100px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+header{
+    background-color: burlywood;
+    grid-area: header;
+}
+
+nav{
+    background-color: darkorange;
+    grid-area: nav;
+}
+
+nav > ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    list-style-type: none;
+    text-align: center;
+    display: grid;
+    align-items: stretch;
+    margin: auto;
+}
+
+main{
+    background-color: khaki;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+}
+
+footer{
+    background-color: thistle;
+    grid-area: footer;
+    text-align: center;
 }
