@@ -2,5 +2,26 @@ table, th, td{
     border: solid black 1px;
     margin: auto;
     border-collapse: collapse;
-    table-layout: fixed;
+    width: 900px;
+    height: 250px;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.black{
+    background-color: black;
+}
+
+.green{
+    background-color: green;
 }
