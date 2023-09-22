@@ -2,8 +2,8 @@ table, th, td{
     border: solid black 1px;
     margin: auto;
     border-collapse: collapse;
-    width: 900px;
-    height: 250px;
+    width: 720px;
+    height: 200px;
 }
 
 .blue{
